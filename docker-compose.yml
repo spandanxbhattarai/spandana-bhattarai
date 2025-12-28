@@ -18,7 +18,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      DATABASE_URL: postgres://postgres:_eO%3FZKHg%2327%3CGn%3Ew%21sA59sd%5BPX-N@database-1.cluster-culefvtmq97k.us-east-1.rds.amazonaws.com:5432/postgres
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/app_db
     depends_on:
       - postgres
     command: sh -c "npx drizzle-kit push && npm start"
