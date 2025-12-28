@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const connectionString = process.env.DATABASE_URL || "postgres://postgres:postgres@localhost:5432/app_db";
+const connectionString = process.env.DATABASE_URL || "postgres://postgres:postgres@british-viusal-studio-postgres-1:5432/app_db";
 
 const client = postgres(connectionString);
 
