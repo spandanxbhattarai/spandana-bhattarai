@@ -18,7 +18,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      DATABASE_URL: postgres://postgres:postgres@server-postgres-1:5432/app_db
+      DATABASE_URL: postgres://postgres:postgres@spandana-bhattarai-postgres-1:5432/app_db
     depends_on:
       - postgres
     command: sh -c "npx drizzle-kit push && npm start"
